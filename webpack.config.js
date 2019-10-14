@@ -40,7 +40,7 @@ module.exports = {
         //服务端压缩是否开启
         compress:true,
         port: 9000, //本地开发服务器端口
-        // open:true,//自动拉起浏览器
+        open:true,//自动拉起浏览器
         hot:true,//热加载
     },
     plugins:[

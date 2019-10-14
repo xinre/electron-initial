@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "50df16ab23545f2deff2";
+/******/ 	var hotCurrentHash = "88210cb19c74e6ed440c";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -803,7 +803,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let rootid = document.getElementById('root');\r\nrootid.innerHTML = \"测试\"\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("let rootid = document.getElementById('root');\r\nrootid.innerHTML = \"测试123\"\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

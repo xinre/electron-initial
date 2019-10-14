@@ -8,7 +8,7 @@
     "bundle": "webpack --mode development",
     "start": "npm-run-all --parallel serve bundle dev",
     "serve": "electron .",
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack-dev-server",
     "build": "webpack"
   },
   "repository": "https://github.com/electron/electron-quick-start",

@@ -15,22 +15,28 @@ let mainWindow
  
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600})
+    mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true
+        },
+      })
  
     // and load the index.html of the app.
  
-    if(pkg.DEV) { 
+    // if(pkg.DEV) { 
         mainWindow.loadURL("http://localhost:9000/")
-    } else { 
-        mainWindow.loadURL(url.format({
-            pathname:path.join(__dirname, './dist/index.html'), 
-            protocol:'file:', 
-            slashes:true 
-        }))
-    } 
+    // } else { 
+    //     mainWindow.loadURL(url.format({
+    //         pathname:path.join(__dirname, './dist/index.html'), 
+    //         protocol:'file:', 
+    //         slashes:true 
+    //     }))
+    // } 
  
     // Open the DevTools.
-    // mainWindow.webContents.openDevTools()
+    mainWindow.webContents.openDevTools()
  
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
@@ -39,6 +45,7 @@ function createWindow() {
         // when you should delete the corresponding element.
         mainWindow = null
     })
+
 }
  
 // This method will be called when Electron has finished
